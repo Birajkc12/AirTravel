@@ -236,4 +236,24 @@
       }
     }
   }
+  .ballon {
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    right: 20px;
+    top: 20px;
+  }
+  .coffee {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 120px;
+    top: 300px;
+    @media (max-width: 900px) {
+      & {
+        /* CSS properties specific to the 650px viewport width */
+        display: none;
+      }
+    }
+  }
 }

@@ -224,6 +224,26 @@ section:nth-child(even) {
     display: none;
   }
 }
+.overlay .ballon {
+  position: absolute;
+  width: 91px;
+  height: 91px;
+  right: 20px;
+  top: 20px;
+}
+.overlay .coffee {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: 120px;
+  top: 300px;
+}
+@media (max-width: 900px) {
+  .overlay .coffee {
+    /* CSS properties specific to the 650px viewport width */
+    display: none;
+  }
+}
 
 section .container {
   gap: 100px;
@@ -375,7 +395,12 @@ section .container .description .content p {
 }
 
 /* Slider part starts here */
+.sc-3 {
+  position: relative;
+}
 .sc-3 .carousel-inner .carousel-item .container .carousel-caption {
+  position: absolute;
+  top: 55px;
   text-align: right;
 }
 .sc-3 .carousel-inner .carousel-item .container .carousel-caption h2 {
@@ -412,6 +437,42 @@ section .container .description .content p {
 .sc-3 .carousel-item {
   width: 100%;
   height: 442px;
+}
+.sc-3 .p1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  top: 10px;
+}
+.sc-3 .p2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 220px;
+  top: 180px;
+}
+.sc-3 .p3 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 90px;
+  bottom: 40px;
+}
+.sc-3 .p4 {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+.sc-3 .p5 {
+  position: absolute;
+  left: 200px;
+  top: 280px;
+}
+.sc-3 .p6 {
+  position: absolute;
+  left: 250px;
+  top: 20px;
 }
 
 /* ENds here*/
