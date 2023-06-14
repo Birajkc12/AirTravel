@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Profile Page</title>
+    <title>Contact Page</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -123,107 +123,101 @@
         </nav>
       </header>
     </div>
-    <div class="container mt-5 main-profile">
-      <img src="./Images//p6.png" alt="" class="p1" />
-      <img src="./Images/airplane.png" alt="" class="p2" />
-      <img src="./Images/coffee.png" alt="" class="p3" />
-      <img src="./Images/Global.png" alt="" class="p4" />
-      <img src="./Images/luggage.png" alt="" class="p5" />
-      <img src="./Images/p7.png" alt="" class="p6" />
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body text-center">
-              <img
-                src="./Images/pp.png"
-                style="height: 100px; width: 100px"
-                class="img-fluid rounded-circle mb-3"
-                alt="Profile Picture"
-              />
-              <h2 class="card-title">
-                Welcome, <span id="nameField">User</span>!
-              </h2>
-              <p class="card-text">
-                Email: <span id="emailField">random@example.com</span>
-              </p>
-              <p class="card-text">
-                Location: <span id="locationField">Kathmandu, Nepal</span>
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                data-toggle="modal"
-                data-target="#editProfileModal"
-                >Edit Profile</a
-              >
-              <a href="#" class="btn btn-danger" id="logoutBtn">Logout</a>
+    <main>
+      <section class="p-0">
+        <div id="mainContent">
+          <div class="clouds">
+            <!-- <img src="./Images/clouds.png" alt="" /> -->
+            <div class="mainWrapper">
+              <div class="layout">
+                <div class="title">
+                  <h2>Contact Us By Email</h2>
+                </div>
+                <div class="top-level-form">
+                  <div class="label">
+                    <label>Choose a product:</label>
+                  </div>
+                  <select name="" id="Support">
+                    <option value="hotel">Hotel Reservations</option>
+                    <option value="car">Car Rentals</option>
+                    <option value="air" selected="selected">Flights</option>    
+                      <option value="vp">Packages</option>
+                    </select>
+                  </select>
+                </div>
+                <div class="contact-form">
+                    <form id="rs_contact_form" action="">
+                    <div class="rs_form_row">
+                        <div class="rs_label">
+                            <label>Name:</label>
+                        </div>
+                        <input type="text" placeholder="Name" id="rs_user" name="name">
+                        <div class="rs_warn_red">Enter your name.</div>
+                    </div>
+                    <div class="rs_form_row">
+                        <div class="rs_label">
+                            <label>Email:</label>
+                        </div>
+                        <input type="text" placeholder="Email Address" id="rs_email" name="email">
+                        <div class="rs_warn_red">Enter your email address.</div>
+                    </div>
+                    <div class="rs_form_row">
+                        <div class="rs_label">
+                            <label>Itinerary Number</label>
+                        </div>
+                        <input type="text" placeholder="Itinerary Number" name="trip_id" id="rs_tripid">
+                        <div class="rs_warn_red"> Enter your Itinerary Number.</div>
+                        <div class="rs_confirmation_message">
+                            <div class="rs_label rs_confirmation_label"></div>
+                            <i class="rs_icon">]</i>
+                            <p class="rs_confirmation_text">This number can be found in your confirmation email.</p><p>
+                        </p></div>
+                    </div>
+                    
+                    <div class="rs_form_row">
+                        <div class="rs_label">
+                            <label>Category:</label>
+                        </div>
+
+                        <select name="category" id="rs_email_category">
+                            <option value="">- Select a category -</option>
+                            <option value="1"> 1. &nbsp;About Airline Tickets</option>
+                            <option value="2"> 2. &nbsp;Making a Reservation</option>
+                            <option value="3"> 3. &nbsp;My Existing Reservation</option>
+                            <option value="4"> 4. &nbsp;Airport/Travel Procedure</option>
+                            <option value="5"> 5. &nbsp;Questions About Travel Insurance</option>
+                            <option value="6"> 6. &nbsp;Technical Difficulties</option>
+                            <option value="7"> 7. &nbsp;Website Suggestions/Comments</option>
+                            <option value="8"> 8. &nbsp;Other</option>
+                        </select>
+                        <div class="rs_warn_red">Select a category.</div>
+                    </div>
+
+                    <div class="rs_form_row">
+                        <div class="rs_label rs_label_top">
+                            <label>Question:</label>
+                        </div>
+                        <textarea name="question" id="rs_email_question" data-gramm="false" wt-ignore-input="true"></textarea>
+                        <div class="rs_warn_red">Please Enter your question.</div>
+                    </div>
+                    <div class="rs_form_row">
+                        <div class="rs_label">
+                            <label>&nbsp;</label>
+                        </div>
+                        <span class="rs_cap">Please un-check to submit this form:</span>
+                        <input type="checkbox" id="rs_cap" checked="">
+                    </div>
+                    <div class="rs_form_row_button">
+                        <div class="rs_button" id="rs_submit_contact_form">Submit</div>
+                    </div>
+                </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Edit Profile Modal -->
-    <div
-      class="modal fade"
-      id="editProfileModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="editProfileModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- Edit profile form goes here -->
-            <form id="editProfileForm">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="location">Location</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="location"
-                  placeholder="Enter your location"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Save Changes
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      </section>
+    </main>
     <section class="sc-4 section">
       <div class="container-fluid upper-footer">
         <div class="container">
@@ -336,57 +330,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script>
-      // Update profile fields dynamically
-      function updateProfileFields(name, email, location) {
-        document.getElementById("nameField").textContent = name;
-        document.getElementById("emailField").textContent = email;
-        document.getElementById("locationField").textContent = location;
-      }
-
-      // Logout button click event
-      document
-        .getElementById("logoutBtn")
-        .addEventListener("click", function () {
-          // Perform logout operation
-          // Redirect to the login/signup page or perform any other necessary actions
-          window.location.href = "/login.html"; // Replace with your login/signup page URL
-        });
-
-      // Edit profile form submission
-      document
-        .getElementById("editProfileForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent form submission
-
-          // Get form field values
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var location = document.getElementById("location").value;
-
-          // Update the profile fields dynamically
-          updateProfileFields(name, email, location);
-
-          // Perform profile update operation
-          // Send the form data to the server or perform any other necessary actions
-          alert("Profile updated successfully!");
-
-          // Close the modal
-          $("#editProfileModal").modal("hide");
-        });
-
-      // Initial profile fields update
-      updateProfileFields(
-        "Biraj Kc",
-        "birajkc409@gmail.com",
-        "Kathmandu, Nepal"
-      );
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

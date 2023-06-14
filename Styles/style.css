@@ -476,6 +476,98 @@ section .container .description .content p {
 }
 
 /* ENds here*/
+.main-profile {
+  height: 55vh;
+  position: relative;
+}
+.main-profile .p1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  top: 10px;
+}
+.main-profile .p2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 220px;
+  top: 180px;
+}
+.main-profile .p3 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 90px;
+  bottom: 40px;
+}
+.main-profile .p4 {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+}
+.main-profile .p5 {
+  position: absolute;
+  left: 200px;
+  top: 280px;
+}
+.main-profile .p6 {
+  position: absolute;
+  left: 250px;
+  top: 20px;
+}
+
+#mainContent {
+  height: -moz-fit-content;
+  height: fit-content;
+  background: url(../Images/background.png) repeat-x;
+  background-color: #ffffff;
+}
+#mainContent .clouds {
+  background: url("../Images/clouds.png") repeat-x;
+}
+#mainContent .clouds .mainWrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+#mainContent .clouds .mainWrapper .layout {
+  border: 0px !important;
+  padding: 20px 2% 0 2%;
+}
+#mainContent .clouds .mainWrapper .layout .title {
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+#mainContent .clouds .mainWrapper .layout .title h2 {
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+  vertical-align: middle;
+  display: inline-block;
+  zoom: 1;
+}
+#mainContent .clouds .mainWrapper .layout .top-level-form {
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+#mainContent .clouds .mainWrapper .layout .top-level-form .label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#mainContent .clouds .mainWrapper .layout .top-level-form .label label {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#mainContent .clouds .mainWrapper .layout .top-level-form select {
+  width: 100%;
+}
 .overlay {
   position: relative;
   width: 100%;
