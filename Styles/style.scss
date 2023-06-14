@@ -1,0 +1,42 @@
+@import "base";
+@import "nav";
+@import "section";
+@import "footer";
+@import "slider";
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //   background-color: black;
+  .booking {
+    z-index: 9999;
+  }
+}
+/* Hide the calendar button */
+.date-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.ui-datepicker {
+  background-color: #fff; /* Set the desired background color */
+  border: 1px solid #ccc; /* Add a border for clarity */
+  padding: 10px; /* Add some padding */
+}
+.ui-datepicker table {
+  border-collapse: collapse; /* Collapse borders to prevent double lines */
+}
+
+.ui-datepicker td {
+  border: 1px solid #ccc; /* Add border to table cells */
+  padding: 5px; /* Add padding for spacing */
+}
+@media screen and (min-width: 767px) {
+  .row {
+    .ct-1 {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      margin-bottom: 30px;
+    }
+  }
+}

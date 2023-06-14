@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Newsreader&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+  font-family: "Newsreader", serif;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 100px 0px;
+}
+section:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+}

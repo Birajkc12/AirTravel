@@ -1,0 +1,55 @@
+/* Slider part starts here */
+
+.sc-3 {
+  .carousel-inner {
+    .carousel-item {
+      .container {
+        .carousel-caption {
+          h2 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            /* or 120% */
+
+            text-align: center;
+
+            color: #514d59;
+          }
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 60px;
+            /* identical to box height, or 333% */
+
+            text-align: center;
+
+            color: #514d59;
+          }
+          small {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height, or 122% */
+
+            color: #514d59;
+            text-align: right;
+          }
+          text-align: right;
+        }
+      }
+    }
+  }
+  #myCarousel,
+  .carousel-item {
+    width: 100%;
+    height: 442px;
+  }
+}
+
+/* ENds here*/

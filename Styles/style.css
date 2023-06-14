@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Newsreader&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+  font-family: "Newsreader", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 100px 0px;
+}
+
+section:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+}
+
+.hero-img-container {
+  background-image: url(/Images/Hero.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+.hero-img-container header nav a img {
+  height: 38px;
+  width: 162px;
+}
+.hero-img-container header nav button img {
+  height: 30px;
+  width: 30px;
+}
+.hero-img-container header nav .custom {
+  width: 180px;
+}
+.hero-img-container header nav .custom .other {
+  width: 70px;
+}
+.hero-img-container header nav .custom .other a img {
+  width: 30px;
+  height: 30px;
+}
+.hero-img-container .booking {
+  height: 220px;
+  margin: 120px auto;
+}
+.hero-img-container .booking .booking-panel .form-header {
+  width: 180px;
+  height: 40px;
+  left: 260px;
+  top: 292px;
+  color: white;
+  background: #212121;
+  border-radius: 20px 120px 0px 0px;
+}
+.hero-img-container .booking .booking-panel .form-body {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(81, 77, 89, 0.1);
+  box-shadow: 0px 195px 78px rgba(81, 77, 89, 0.02), 0px 110px 66px rgba(81, 77, 89, 0.08), 0px 49px 49px rgba(81, 77, 89, 0.13), 0px 12px 27px rgba(81, 77, 89, 0.15), 0px 0px 0px rgba(81, 77, 89, 0.15);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  padding: 25px;
+  border-radius: 0px 20px 20px 20px;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 32px 25px;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form div:last-child {
+  border: none !important;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form div {
+  border-right: 1px solid #514d59;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .form-label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  padding: 0.375rem 0.75rem;
+  color: rgba(81, 77, 89, 0.8);
+  margin-bottom: 0;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .form-control {
+  border: none !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #514d59;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form img {
+  width: 40px;
+  height: 40px;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .pl {
+  padding-left: 20px;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .pl button {
+  border: none;
+  background: transparent;
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .pl button .search {
+  width: 75px;
+  height: 75px;
+  filter: drop-shadow(-2px 40px 16px rgba(82, 77, 90, 0.03)) drop-shadow(-1px 22px 13px rgba(82, 77, 90, 0.1)) drop-shadow(0px 10px 10px rgba(82, 77, 90, 0.17)) drop-shadow(0px 2px 5px rgba(82, 77, 90, 0.2)) drop-shadow(0px 0px 0px rgba(82, 77, 90, 0.2));
+}
+.hero-img-container .booking .booking-panel .form-body #booking-form .pl:nth-last-child(2) {
+  border-right: none;
+}
+
+@media (max-width: 888px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+  }
+  form .pl {
+    border: 1px solid;
+  }
+  form .pl:nth-last-child(2) {
+    border-right: 1px solid !important;
+  }
+  form div {
+    border: 1px solid;
+  }
+}
+.overlay .cam {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 30px;
+  top: 100px;
+}
+@media (max-width: 900px), (max-width: 767px) {
+  .overlay .cam {
+    /* CSS properties specific to the 900px and 767px viewport widths */
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .overlay .cam {
+    /* CSS properties specific to the 900px viewport width */
+    left: 30px;
+    top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .overlay .cam {
+    /* CSS properties specific to the 767px viewport width */
+    left: 30px;
+    top: 100px;
+  }
+}
+@media (max-width: 575px) {
+  .overlay .cam {
+    /* CSS properties specific to the 575px viewport width */
+    display: none !important;
+  }
+}
+.overlay .air {
+  position: absolute;
+  width: 184.62px;
+  height: 184.62px;
+  left: 370.82px;
+  top: -20px;
+  transform: rotate(20.02deg);
+}
+@media (max-width: 1200px) {
+  .overlay .air {
+    /* CSS properties specific to the 1200px viewport width */
+    width: 160px;
+    height: 160px;
+    left: 350px;
+    top: -20px;
+  }
+}
+@media (max-width: 1000px) {
+  .overlay .air {
+    /* CSS properties specific to the 1000px viewport width */
+    width: 150px;
+    height: 150px;
+    left: 250px;
+    top: -20px;
+  }
+}
+@media (max-width: 850px) {
+  .overlay .air {
+    /* CSS properties specific to the 850px viewport width */
+    width: 130px;
+    height: 130px;
+    left: 200px;
+    top: -20px;
+  }
+}
+@media (max-width: 700px) {
+  .overlay .air {
+    /* CSS properties specific to the 700px viewport width */
+    width: 100px;
+    height: 100px;
+    left: 170px;
+    top: -20px;
+  }
+}
+@media (max-width: 650px) {
+  .overlay .air {
+    /* CSS properties specific to the 650px viewport width */
+    display: none;
+  }
+}
+
+section .container {
+  gap: 100px;
+}
+section .container .title h2 {
+  font-size: 70px;
+  line-height: 60px;
+  text-align: center;
+  color: #514d59;
+}
+section .container .description .content {
+  gap: 10px;
+}
+section .container .description .content img {
+  height: 100px;
+  width: 100px;
+}
+section .container .description .content h4 {
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  color: #514d59;
+}
+section .container .description .content p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+  text-align: center;
+  color: #514d59;
+}
+
+/* Section 2 Starts here */
+.sc-2 .container .row img {
+  height: 450px;
+  width: 450px;
+}
+.sc-2 .container .row .content-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sc-2 .container .row .content-details .content-title {
+  width: 435px;
+}
+.sc-2 .container .row .content-details .content-title h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  color: #514d59;
+}
+.sc-2 .container .row .content-details .content-description {
+  width: 435px;
+}
+.sc-2 .container .row .content-details .content-description p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+  color: #514d59;
+}
+.sc-2 .container .row .content-details .content-link a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #7000ff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+.sc-2 .container .row .content-details .content-link img {
+  width: 12px;
+  height: 10px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Ends Here */
+.sc-4 {
+  padding: 0;
+}
+.sc-4 .upper-footer {
+  background-color: #333333;
+  color: #fff;
+}
+.sc-4 .upper-footer footer .col a img {
+  height: 38px;
+  width: 162px;
+}
+.sc-4 .upper-footer footer .col img {
+  width: 200px;
+  height: 25px;
+}
+.sc-4 .upper-footer footer .col .social-media a img {
+  width: 30px;
+  height: 30px;
+}
+.sc-4 .upper-footer footer .col h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sc-4 .upper-footer footer .col li a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #fafafa;
+}
+.sc-4 .lower-footer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #625f67;
+}
+.sc-4 .lower-footer ul li a {
+  text-decoration: none !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #625f67;
+}
+
+/* Slider part starts here */
+.sc-3 .carousel-inner .carousel-item .container .carousel-caption {
+  text-align: right;
+}
+.sc-3 .carousel-inner .carousel-item .container .carousel-caption h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
+  text-align: center;
+  color: #514d59;
+}
+.sc-3 .carousel-inner .carousel-item .container .carousel-caption p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  /* identical to box height, or 333% */
+  text-align: center;
+  color: #514d59;
+}
+.sc-3 .carousel-inner .carousel-item .container .carousel-caption small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+  color: #514d59;
+  text-align: right;
+}
+.sc-3 #myCarousel,
+.sc-3 .carousel-item {
+  width: 100%;
+  height: 442px;
+}
+
+/* ENds here*/
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.overlay .booking {
+  z-index: 9999;
+}
+
+/* Hide the calendar button */
+.date-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.ui-datepicker {
+  background-color: #fff; /* Set the desired background color */
+  border: 1px solid #ccc; /* Add a border for clarity */
+  padding: 10px; /* Add some padding */
+}
+
+.ui-datepicker table {
+  border-collapse: collapse; /* Collapse borders to prevent double lines */
+}
+
+.ui-datepicker td {
+  border: 1px solid #ccc; /* Add border to table cells */
+  padding: 5px; /* Add padding for spacing */
+}
+
+@media screen and (min-width: 767px) {
+  .row .ct-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
