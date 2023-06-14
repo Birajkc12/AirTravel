@@ -566,8 +566,94 @@ section .container .description .content p {
   vertical-align: middle;
 }
 #mainContent .clouds .mainWrapper .layout .top-level-form select {
+  width: 75%;
+}
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row {
   width: 100%;
 }
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row .rs_label {
+  width: 100%;
+  margin: 5px 0;
+}
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row .rs_label label {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row input {
+  width: 75%;
+  display: inline-block;
+  zoom: 1;
+  height: 34px;
+  box-sizing: border-box;
+  padding: 0 2% 0 2%;
+  margin: 5px 0px;
+  border: 1px solid #b7b69d;
+  color: #333333;
+  border-radius: 3px;
+  box-shadow: inset 4px 4px 3px -3px #cccccc;
+  vertical-align: middle;
+}
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row .rs_warn_red {
+  margin: 5px 0;
+  display: none;
+}
+#mainContent .clouds .mainWrapper .layout .contact-form .rs_form_row input[type=checkbox] {
+  box-shadow: none;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 5px !important;
+  border: 0px !important;
+  padding: 0px !important;
+}
+
+.rs_confirmation_message {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.rs_confirmation_message .rs_label.rs_confirmation_label {
+  display: none;
+}
+.rs_confirmation_message .rs_icon {
+  margin-right: 3px;
+}
+.rs_confirmation_message .rs_confirmation_text {
+  margin-bottom: 0;
+}
+
+@media (max-width: 888px) {
+  form div {
+    border: none;
+  }
+  form {
+    border: none;
+  }
+}
+.rs_form_row textarea {
+  box-sizing: border-box;
+  padding: 2% 2% 2% 2%;
+  margin: 5px 0px;
+  border: 1px solid #b7b69d;
+  color: #333333;
+  border-radius: 3px;
+  box-shadow: inset 4px 4px 3px -3px #cccccc;
+  display: inline-block;
+  width: 75%;
+  vertical-align: middle;
+}
+
+.rs_book_leftcol4_inner .rs_button {
+  width: 180px;
+  line-height: 42px;
+  font-size: 24px;
+  display: block;
+  margin: 10px 0 0;
+}
+
 .overlay {
   position: relative;
   width: 100%;

@@ -70,7 +70,10 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="home.html"
                       >Home</a
                     >
                   </li>
@@ -140,77 +143,119 @@
                   <select name="" id="Support">
                     <option value="hotel">Hotel Reservations</option>
                     <option value="car">Car Rentals</option>
-                    <option value="air" selected="selected">Flights</option>    
-                      <option value="vp">Packages</option>
-                    </select>
+                    <option value="air" selected="selected">Flights</option>
+                    <option value="vp">Packages</option>
                   </select>
                 </div>
                 <div class="contact-form">
-                    <form id="rs_contact_form" action="">
+                  <form id="rs_contact_form" action="">
                     <div class="rs_form_row">
-                        <div class="rs_label">
-                            <label>Name:</label>
-                        </div>
-                        <input type="text" placeholder="Name" id="rs_user" name="name">
-                        <div class="rs_warn_red">Enter your name.</div>
+                      <div class="rs_label">
+                        <label>Name:</label>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        id="rs_user"
+                        name="name"
+                      />
+                      <div class="rs_warn_red">Enter your name.</div>
                     </div>
                     <div class="rs_form_row">
-                        <div class="rs_label">
-                            <label>Email:</label>
-                        </div>
-                        <input type="text" placeholder="Email Address" id="rs_email" name="email">
-                        <div class="rs_warn_red">Enter your email address.</div>
+                      <div class="rs_label">
+                        <label>Email:</label>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Email Address"
+                        id="rs_email"
+                        name="email"
+                      />
+                      <div class="rs_warn_red">Enter your email address.</div>
                     </div>
                     <div class="rs_form_row">
-                        <div class="rs_label">
-                            <label>Itinerary Number</label>
-                        </div>
-                        <input type="text" placeholder="Itinerary Number" name="trip_id" id="rs_tripid">
-                        <div class="rs_warn_red"> Enter your Itinerary Number.</div>
-                        <div class="rs_confirmation_message">
-                            <div class="rs_label rs_confirmation_label"></div>
-                            <i class="rs_icon">]</i>
-                            <p class="rs_confirmation_text">This number can be found in your confirmation email.</p><p>
-                        </p></div>
+                      <div class="rs_label">
+                        <label>Itinerary Number</label>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Itinerary Number"
+                        name="trip_id"
+                        id="rs_tripid"
+                      />
+                      <div class="rs_warn_red">
+                        Enter your Itinerary Number.
+                      </div>
+                      <div
+                        class="rs_confirmation_message d-flex align-items-center"
+                      >
+                        <div class="rs_label rs_confirmation_label"></div>
+                        <i class="fas fa-exclamation-circle mr-1"></i>
+                        <p class="rs_confirmation_text">
+                          This number can be found in your confirmation email.
+                        </p>
+                        <p></p>
+                      </div>
                     </div>
-                    
-                    <div class="rs_form_row">
-                        <div class="rs_label">
-                            <label>Category:</label>
-                        </div>
 
-                        <select name="category" id="rs_email_category">
-                            <option value="">- Select a category -</option>
-                            <option value="1"> 1. &nbsp;About Airline Tickets</option>
-                            <option value="2"> 2. &nbsp;Making a Reservation</option>
-                            <option value="3"> 3. &nbsp;My Existing Reservation</option>
-                            <option value="4"> 4. &nbsp;Airport/Travel Procedure</option>
-                            <option value="5"> 5. &nbsp;Questions About Travel Insurance</option>
-                            <option value="6"> 6. &nbsp;Technical Difficulties</option>
-                            <option value="7"> 7. &nbsp;Website Suggestions/Comments</option>
-                            <option value="8"> 8. &nbsp;Other</option>
-                        </select>
-                        <div class="rs_warn_red">Select a category.</div>
+                    <div class="rs_form_row">
+                      <div class="rs_label">
+                        <label>Category:</label>
+                      </div>
+
+                      <select name="category" id="rs_email_category">
+                        <option value="">- Select a category -</option>
+                        <option value="1">
+                          1. &nbsp;About Airline Tickets
+                        </option>
+                        <option value="2">2. &nbsp;Making a Reservation</option>
+                        <option value="3">
+                          3. &nbsp;My Existing Reservation
+                        </option>
+                        <option value="4">
+                          4. &nbsp;Airport/Travel Procedure
+                        </option>
+                        <option value="5">
+                          5. &nbsp;Questions About Travel Insurance
+                        </option>
+                        <option value="6">
+                          6. &nbsp;Technical Difficulties
+                        </option>
+                        <option value="7">
+                          7. &nbsp;Website Suggestions/Comments
+                        </option>
+                        <option value="8">8. &nbsp;Other</option>
+                      </select>
+                      <div class="rs_warn_red">Select a category.</div>
                     </div>
 
                     <div class="rs_form_row">
-                        <div class="rs_label rs_label_top">
-                            <label>Question:</label>
-                        </div>
-                        <textarea name="question" id="rs_email_question" data-gramm="false" wt-ignore-input="true"></textarea>
-                        <div class="rs_warn_red">Please Enter your question.</div>
+                      <div class="rs_label rs_label_top">
+                        <label>Question:</label>
+                      </div>
+                      <textarea
+                        name="question"
+                        id="rs_email_question"
+                        data-gramm="false"
+                        wt-ignore-input="true"
+                      ></textarea>
+                      <div class="rs_warn_red">Please Enter your question.</div>
                     </div>
                     <div class="rs_form_row">
-                        <div class="rs_label">
-                            <label>&nbsp;</label>
-                        </div>
-                        <span class="rs_cap">Please un-check to submit this form:</span>
-                        <input type="checkbox" id="rs_cap" checked="">
+                      <div class="rs_label">
+                        <label>&nbsp;</label>
+                      </div>
+                      <span class="rs_cap"
+                        >Please un-check to submit this form:</span
+                      >
+                      <input type="checkbox" id="rs_cap" checked="" />
                     </div>
                     <div class="rs_form_row_button">
-                        <div class="rs_button" id="rs_submit_contact_form">Submit</div>
+                      <div class="btn btn-primary" id="rs_submit_contact_form">
+                        Submit
+                      </div>
                     </div>
-                </form>
+                  </form>
                 </div>
               </div>
             </div>
@@ -344,5 +389,9 @@
         $("#datepicker").datepicker();
       });
     </script>
+    <script
+      src="https://kit.fontawesome.com/7563f2a69a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
