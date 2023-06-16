@@ -21,3 +21,8 @@ section:nth-child(odd) {
 section:nth-child(even) {
   background-color: #fff;
 }
+@media (max-width: 1200px) {
+  .sc-1 {
+    margin-top: 200px;
+  }
+}
