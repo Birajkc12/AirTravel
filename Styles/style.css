@@ -452,6 +452,11 @@ section .container .description .content p {
   right: 220px;
   top: 180px;
 }
+@media (max-width: 1200px) {
+  .sc-3 .p2 {
+    display: none;
+  }
+}
 .sc-3 .p3 {
   position: absolute;
   width: 60px;
@@ -468,6 +473,16 @@ section .container .description .content p {
   position: absolute;
   left: 200px;
   top: 280px;
+}
+@media (max-width: 800px) {
+  .sc-3 .p5 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .sc-3 .p3 {
+    display: none;
+  }
 }
 .sc-3 .p6 {
   position: absolute;
@@ -626,9 +641,6 @@ section .container .description .content p {
 }
 
 @media (max-width: 888px) {
-  form div {
-    border: none;
-  }
   form {
     border: none;
   }
